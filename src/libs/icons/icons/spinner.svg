@@ -1,0 +1,12 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Spinner">
+<rect id="325" opacity="0.75" x="8.13647" y="10.3638" width="3.27273" height="7.63636" rx="1.5" transform="rotate(90 8.13647 10.3638)" fill="white" fill-opacity="0.8"/>
+<rect id="270" opacity="0.87" x="2.85645" y="4.67139" width="3.27273" height="7.63636" rx="1.5" transform="rotate(-45 2.85645 4.67139)" fill="white" fill-opacity="0.8"/>
+<rect id="225" opacity="0.51" x="10.8635" y="16.3638" width="3.27273" height="7.63636" rx="1.5" fill="white" fill-opacity="0.8"/>
+<rect id="180" opacity="0.63" x="8.25562" y="13.9287" width="3.27273" height="7.63636" rx="1.5" transform="rotate(45 8.25562 13.9287)" fill="white" fill-opacity="0.8"/>
+<rect id="135" opacity="0.39" x="14.4304" y="16.2422" width="3.27273" height="7.63636" rx="1.5" transform="rotate(-45 14.4304 16.2422)" fill="white" fill-opacity="0.8"/>
+<rect id="90" opacity="0.27" x="24.5" y="10.3638" width="3.27273" height="7.63636" rx="1.5" transform="rotate(90 24.5 10.3638)" fill="white" fill-opacity="0.8"/>
+<rect id="45" opacity="0.15" x="19.8296" y="2.35742" width="3.27273" height="7.63636" rx="1.5" transform="rotate(45 19.8296 2.35742)" fill="white" fill-opacity="0.8"/>
+<rect id="0" x="10.8635" width="3.27273" height="7.63636" rx="1.5" fill="white" fill-opacity="0.8"/>
+</g>
+</svg>

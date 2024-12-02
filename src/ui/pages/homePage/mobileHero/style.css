@@ -1,0 +1,71 @@
+/* CustomSlider.css */
+
+.mobile-slider-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  cursor: grab;
+  width: 100vw;
+  max-height: 70vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-slider-container .slider-container:active {
+  cursor: grabbing;
+}
+
+.mobile-slider-container .mobile-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
+
+.mobile-slider-container .mobile-slide.active {
+  opacity: 1;
+  flex: 0 0 60%;
+}
+
+.mobile-slider-container .mobile-slide:not(.active) {
+  transform: scale(0.9);
+}
+
+/* .sl--card-nav-container {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+  bottom: 0;
+} */
+/* .sl--content-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  z-index: 1;
+} */
+
+.content-reveal-btn {
+  background-color: #04b7ac;
+}
+
+.sl--show-card-info,
+.sl--close-card-info {
+  fill: #ffffff;
+}
+
+.sl--show-card-info {
+  transform: scale(0.6, 0.6);
+  -webkit-transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sl--close-card-info {
+  -ms-transform: rotate(45deg) scale(0.6, 0.6);
+  -webkit-transform: rotate(45deg) scale(0.6, 0.6);
+  transform: rotate(45deg) scale(0.6, 0.6);
+  -webkit-transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}

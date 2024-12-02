@@ -1,0 +1,95 @@
+/* Slider Container */
+#slider-container {
+  position: fixed; /* Start as fixed to cover the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; /* Fullscreen height */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  color: #ffffff;
+  transform: translateX(0); /* Start position */
+  transition: transform 0.5s ease-out; /* Smooth sliding */
+}
+
+.slide {
+  flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page Content */
+#content {
+  padding: 20px;
+  background: #f8f9fa;
+  position: relative;
+  z-index: 1; /* Ensure it appears below the slider */
+}
+
+/* Button stripe */
+
+button.Stripe {
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 10px 20px;
+  background: rgba(1, 1, 1, 0.3);
+  position: relative;
+  border-radius: 0.25rem;
+}
+
+button.Stripe::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: #131b30;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: left ease-in 0.3s;
+  border-radius: 0.25rem;
+}
+
+button.Stripe:hover::before {
+  left: 100%;
+  border-radius: 0.25rem;
+}
+
+button.Stripe svg {
+  fill: #ffffff;
+}
+button.Stripe svg.Arrow-Hover {
+  display: none;
+}
+button.Stripe:hover {
+  transition: 0.1s ease-in-out;
+}
+button.Stripe:hover svg.Arrow {
+  display: none;
+}
+button.Stripe:hover svg.Arrow-Hover {
+  animation: move 0.15s ease-in-out forwards;
+  display: block;
+}
+@keyframes move {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
